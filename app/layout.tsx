@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/icon.svg",
+  },
   title: "Santeva | Cordless Hand Massager with Heat & Compression",
   description:
     "SANTEVA cordless electric hand massager with heat and compression therapy. Relief for arthritis, carpal tunnel, and hand fatigue. Rechargeable, portable, fits both hands.",
