@@ -16,14 +16,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  icons: {
-    icon: "/icon.svg",
+  metadataBase: new URL("https://santeva.com"),
+  title: {
+    default: "Santeva | Premium Wellness & Self-Care Solutions",
+    template: "%s | Santeva",
   },
-  title: "Santeva | Cordless Hand Massager with Heat & Compression",
   description:
-    "SANTEVA cordless electric hand massager with heat and compression therapy. Relief for arthritis, carpal tunnel, and hand fatigue. Rechargeable, portable, fits both hands.",
+    "Explore Santeva's premium wellness and self-care products designed for your comfort and recovery. Featuring professional-grade therapy tools like our cordless hand massager.",
   keywords: [
+    "Santeva",
+    "wellness products",
+    "self-care tools",
+    "recovery devices",
+    "premium health gadgets",
     "hand massager",
+    "heated therapy",
+    "therapeutic massagers",
+    "personal wellness",
+    "home recovery tools",
+    "pain relief solutions",
     "heated hand massager",
     "hand massager for arthritis",
     "carpal tunnel massager",
@@ -38,15 +49,48 @@ export const metadata: Metadata = {
     "portable hand massager",
     "rechargeable hand massager",
     "therapeutic hand massager",
-    "santeva",
   ],
+  authors: [{ name: "Santeva" }],
+  creator: "Santeva",
+  publisher: "Santeva",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-icon.png",
+  },
   openGraph: {
-    title: "Santeva | Cordless Hand Massager with Heat & Compression",
+    title: "Santeva | Premium Wellness & Self-Care Solutions",
     description:
-      "Professional-grade hand therapy at home. Heat, compression, and deep tissue relief for arthritis, carpal tunnel, and everyday fatigue.",
-    type: "website",
-    locale: "en_US",
+      "Innovative and premium wellness solutions for your daily life. Discover Santeva's therapeutic products designed for peak recovery and comfort.",
+    url: "https://santeva.com",
     siteName: "Santeva",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Santeva | Premium Wellness & Self-Care Solutions",
+    description:
+      "Innovative and premium wellness solutions for your daily life. Discover Santeva's therapeutic products designed for peak recovery and comfort.",
+    creator: "@santeva",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
