@@ -16,7 +16,7 @@ export function Footer() {
               {SITE.description}
             </p>
             <a
-              href={SITE.amazonStoreUrl}
+              href={SITE.amazonProductUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-full

@@ -112,8 +112,10 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
-              <Link
-                href="/products"
+              <a
+                href={SITE.amazonProductUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-brand text-white px-8 py-4 rounded-full
                            font-semibold text-lg shadow-lg shadow-brand/25
                            hover:bg-brand-dark hover:shadow-xl hover:shadow-brand/30
@@ -121,9 +123,9 @@ export default function Home() {
               >
                 Explore Products
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
               <a
-                href={SITE.amazonStoreUrl}
+                href={SITE.amazonProductUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-white text-accent-charcoal

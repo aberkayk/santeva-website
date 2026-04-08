@@ -2,10 +2,10 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight, Sparkles, Shield, Users } from "lucide-react";
 import { Container } from "@/components/shared/container";
 import { About } from "@/components/sections/about";
+import { SITE } from "@/lib/constants";
 import {
   fadeInUp,
   fadeInLeft,
@@ -219,8 +219,10 @@ export default function AboutPage() {
               Discover why thousands of customers trust Santeva for arthritis
               relief, carpal tunnel recovery, and everyday hand wellness.
             </p>
-            <Link
-              href="/products"
+            <a
+              href={SITE.amazonProductUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-brand text-white px-8 py-4 rounded-full
                          font-semibold text-lg shadow-lg shadow-brand/25
                          hover:bg-brand-dark hover:shadow-xl hover:shadow-brand/30
@@ -228,7 +230,7 @@ export default function AboutPage() {
             >
               Explore Products
               <ArrowRight className="w-5 h-5" />
-            </Link>
+            </a>
           </motion.div>
         </Container>
       </section>

@@ -99,7 +99,7 @@ export function FeaturedProduct() {
               className="mt-8 flex flex-col sm:flex-row items-start gap-4"
             >
               <a
-                href={SITE.amazonStoreUrl}
+                href={SITE.amazonProductUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-accent-charcoal text-white px-8 py-4 rounded-full

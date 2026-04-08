@@ -37,7 +37,7 @@ const CONTACT_INFO = [
 ];
 
 const SOCIAL_LINKS = [
-  { label: "Amazon Store", href: SITE.amazonStoreUrl },
+  { label: "Amazon Store", href: SITE.amazonProductUrl },
   // { label: "Instagram", href: "#" },
   // { label: "Facebook", href: "#" },
   // { label: "Twitter", href: "#" },

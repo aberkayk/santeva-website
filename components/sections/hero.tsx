@@ -93,7 +93,7 @@ export function Hero() {
                 className="flex flex-col sm:flex-row gap-4"
               >
                 <a
-                  href={SITE.amazonStoreUrl}
+                  href={SITE.amazonProductUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-brand text-white px-8 py-4 rounded-full
