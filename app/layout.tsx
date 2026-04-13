@@ -58,9 +58,6 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  alternates: {
-    canonical: "/",
-  },
   icons: {
     icon: "/icon.svg",
     apple: "/apple-icon.png",
@@ -73,6 +70,14 @@ export const metadata: Metadata = {
     siteName: "Santeva",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/images/detail-1.png",
+        width: 1200,
+        height: 630,
+        alt: "Santeva Cordless Hand Massager",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -80,6 +85,7 @@ export const metadata: Metadata = {
     description:
       "Innovative and premium wellness solutions for your daily life. Discover Santeva's therapeutic products designed for peak recovery and comfort.",
     creator: "@santeva",
+    images: ["/images/detail-1.png"],
   },
   robots: {
     index: true,
@@ -104,6 +110,31 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Santeva",
+              url: "https://santeva.com",
+              logo: "https://santeva.com/icon.svg",
+              description:
+                "Premium wellness and self-care solutions. Professional-grade hand massagers with heat therapy and airbag compression.",
+              brand: {
+                "@type": "Brand",
+                name: "Santeva",
+              },
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "paklinollc@gmail.com",
+                contactType: "customer service",
+                availableLanguage: "English",
+              },
+              sameAs: ["https://www.amazon.com/dp/B0G7MNR9P1"],
+            }),
+          }}
+        />
         <Header />
         <main>{children}</main>
         <Footer />
