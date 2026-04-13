@@ -58,10 +58,6 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  icons: {
-    icon: "/icon.svg",
-    apple: "/apple-icon.png",
-  },
   openGraph: {
     title: "Santeva | Premium Wellness & Self-Care Solutions",
     description:
