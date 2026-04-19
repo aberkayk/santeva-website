@@ -41,7 +41,7 @@ export default function ProductsPage() {
             },
             offers: {
               "@type": "Offer",
-              url: "https://www.amazon.com/dp/B0G7MNR9P1",
+              url: "https://www.amazon.com/s?k=hand+massager+with+heat+and+compression&me=A2DUFB3EWQ403X&ref=nb_sb_noss",
               availability: "https://schema.org/InStock",
               priceCurrency: "USD",
             },

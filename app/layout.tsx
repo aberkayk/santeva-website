@@ -127,7 +127,9 @@ export default function RootLayout({
                 contactType: "customer service",
                 availableLanguage: "English",
               },
-              sameAs: ["https://www.amazon.com/dp/B0G7MNR9P1"],
+              sameAs: [
+                "https://www.amazon.com/s?k=hand+massager+with+heat+and+compression&me=A2DUFB3EWQ403X&ref=nb_sb_noss",
+              ],
             }),
           }}
         />

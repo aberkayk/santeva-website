@@ -15,7 +15,8 @@ export const SITE = {
   tagline: "Professional Hand Therapy at Home",
   description:
     "Cordless hand massager with heat and compression therapy. Designed for arthritis, carpal tunnel, and everyday hand fatigue relief. Fits both hands, rechargeable via USB-C.",
-  amazonProductUrl: "https://www.amazon.com/dp/B0G7MNR9P1",
+  amazonProductUrl:
+    "https://www.amazon.com/s?k=hand+massager+with+heat+and+compression&me=A2DUFB3EWQ403X&ref=nb_sb_noss",
 } as const;
 
 export const NAV_LINKS = [
